@@ -1,5 +1,3 @@
-
-
 c = 0
 
 def InfoFonction(a=10,b=20):
