@@ -4,6 +4,7 @@ import json
 
 dossier_courant = os.path.dirname(__file__) # definition du chemin vers le dossier 
 chemin_liste = os.path.join(dossier_courant, "liste.json") # récupération du chemin du dossier et ajout du nom du fichier
+print(chemin_liste)
 
 if os.path.exists(chemin_liste): # si le chemin existe
     with open(chemin_liste, "r") as f: # ouverture et lecture du fichier json
