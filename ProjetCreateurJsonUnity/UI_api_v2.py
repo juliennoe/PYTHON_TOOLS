@@ -34,21 +34,31 @@ class UI: # creation de la class
         user_ref = self.load_database()
         user_ref[self.user_id] = {"nom": self.nom, "prenom": self.prenom, "photo": self.photo}
         self.write_json(user_ref)
+        print("tu as ajouter un profil")
            
     def change_key(self, new_key, old_key): # permet de changer une clé dans le dictionnaire
         user_ref = self.load_database()
         user_ref[new_key] = user_ref.pop(old_key)
         self.write_json(user_ref)
+        print("tu as modifier ton profil")
+
+    def modify_key(self, first_key, second_key, new_item):
+        user_ref = self.load_database()
+        user_ref[first_key][second_key] = new_item
+        self.write_json(user_ref)
+        print("tu as modifier un item")
+
     
     def remove_key(self, delete_key): # permet de retirer une clé d'un dictionnaire
         user_ref = self.load_database()
         del user_ref[delete_key]
         self.write_json(user_ref)
+        print("tu as supprimer ton profil")
 
-u = UI("id02", "theo", "choix", "photo")
+u = UI("id06", "catherine", "noe", "pict")
 #u.write_database()
-#u.change_key("id05", "id04")
-#u.remove_key("id05")
+#u.change_key("id00", "prenom","default","none")
+#u.remove_key("id06")
 
 
 

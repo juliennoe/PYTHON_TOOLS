@@ -1,0 +1,12 @@
+{
+    "id00": {
+        "nom": "bob",
+        "prenom": "Noe",
+        "photo": "veolia"
+    },
+    "id01": {
+        "nom": "Catherine",
+        "prenom": "Noe",
+        "photo": "pict"
+    }
+}

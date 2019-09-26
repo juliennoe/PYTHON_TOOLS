@@ -10,4 +10,5 @@ class Dossier:
     def crea_dossier(self):
         dossier = os.path.join(self.chemin_acces, self.nom_dossier)
         os.mkdir(dossier)
+        print("crea dossier")
         
